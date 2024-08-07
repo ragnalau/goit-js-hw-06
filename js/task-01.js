@@ -23,15 +23,3 @@ for (const item of itemEl) {
   console.log(`Category: ${categoryTitle} \nElements: ${elements} \n\n\n`);
 }
 
-/*
-Number of categories: 3
-
-Category: Animals
-Elements: 4
-
-Category: Products
-Elements: 3
-
-Category: Technologies
-Elements: 5
-*/
