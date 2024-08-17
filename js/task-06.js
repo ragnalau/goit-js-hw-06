@@ -16,11 +16,15 @@ const expectedLength = parseInt(
   10
 );
 
+console.log(expectedLength);
+
 inputValidation.addEventListener("blur", () => {
   console.log(inputValidation.value.length);
   if (inputValidation.value.length === expectedLength) {
     inputValidation.classList.add("valid");
+    inputValidation.classList.remove("invalid");
     return;
   }
   inputValidation.classList.add("invalid");
+  inputValidation.classList.remove("valid");
 });
