@@ -11,11 +11,10 @@ const inputName = document.getElementById('name-input');
 const outputName =  document.getElementById('name-output');
 
 inputName.addEventListener('keypress', e => {
-    if(e.key === 'Enter'){
-        if(inputName.value !== '') {
-            outputName.textContent = inputName.value;
+        if(inputName.value == '') {
+            outputName.textContent = 'Anonymous';
             return;
         }
-    }
+        outputName.textContent = inputName.value;
 })
 
