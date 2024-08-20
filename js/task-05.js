@@ -10,10 +10,11 @@ Dacă input-ul este gol, în acel span se va afișa "Anonymous".
 const inputName = document.getElementById('name-input'); 
 const outputName =  document.getElementById('name-output');
 
-inputName.addEventListener('keypress', e => {
+inputName.addEventListener('input', e => {
         if(inputName.value == '') {
             outputName.textContent = 'Anonymous';
             return;
+        
         }
         outputName.textContent = inputName.value;
 })
